@@ -3,12 +3,12 @@ let length = document.getElementById("length")
 
 function generatePassword() {
     const num = length.value
-    const alph = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-+=?"
+    const alph = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()_-+=?0123456789"
     let random
     
     let passwordLetters = ""
     for (let i = 0; i < num; i++) {
-        random = Math.floor(Math.random() * 67)
+        random = Math.floor(Math.random() * 77)
         passwordLetters += alph[random]
     }
     password.value = passwordLetters
