@@ -6,20 +6,20 @@
 
 body {
     background: radial-gradient(rgb(131, 151, 101), white);
-    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1rem;
+    margin: 7.125rem 23.875rem;
+    max-width: 90rem;
 }
 
 .container {
     display: grid;
     justify-content: center;
     place-content: center;
-    margin: 12.5rem auto 0 auto;
     width: 100%;
-    max-height: 37.5rem;
+    height: auto;
     border: 0.0625rem solid black;
     border-radius: 0.9375rem;
     padding: 1.5rem;
@@ -69,15 +69,64 @@ label {
     color: rgb(93, 78, 78);
 }
 
-@media (max-width: 30rem) {
+@media (max-width: 64rem) {
     body {
         padding: 0;
+        height: auto;
+        margin: 0 10.125rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 48rem) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 48rem;
     }
 
     .container {
         margin-top: 4rem;
         width: auto;
-        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 30rem) {
+    body {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: auto;
+        max-width: 30rem;
+    }
+
+    .container {
+        margin-top: 4rem;
+        width: auto;
     }
 
     h1 {
