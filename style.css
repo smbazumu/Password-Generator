@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 7.125rem 23.875rem;
     max-width: 90rem;
 }
 
@@ -18,7 +17,8 @@ body {
     display: grid;
     justify-content: center;
     place-content: center;
-    width: 100%;
+    min-width: 25rem;
+    margin: 7.125rem auto;
     height: auto;
     border: 0.0625rem solid black;
     border-radius: 0.9375rem;
@@ -71,14 +71,7 @@ label {
 
 @media (max-width: 64rem) {
     body {
-        padding: 0;
-        height: auto;
-        margin: 0 10.125rem;
-    }
-
-    .container {
-        margin-top: 4rem;
-        width: 100%;
+        max-width: 64rem;
     }
 
     h1 {
@@ -93,16 +86,7 @@ label {
 
 @media (max-width: 48rem) {
     body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: auto;
         max-width: 48rem;
-    }
-
-    .container {
-        margin-top: 4rem;
-        width: auto;
     }
 
     h1 {
@@ -117,16 +101,11 @@ label {
 
 @media (max-width: 30rem) {
     body {
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: auto;
         max-width: 30rem;
     }
 
     .container {
-        margin-top: 4rem;
-        width: auto;
+        min-width: 17rem;
     }
 
     h1 {
